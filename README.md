@@ -17,7 +17,7 @@ Diagonal 15-Puzzle is a modified version of the 15-Puzzle in which the blank squ
 
 ## Additional Notes
 1. The command-line argument option `-e` is valid only when the search method `-s` is selected as `astar`
-2. If you put your own problem in a text file, the folder where the project is located, you can solve it by entering the name of your file at the command line
+2. You can put your own puzzle in a text file in the same folder that contains the script and solve it by entering the file name as a parameter in the command line
 
 ## The Solution of the Example Puzzle
 ![astar h2](https://cloud.githubusercontent.com/assets/9055746/22849025/da1a43ca-f001-11e6-8224-61b8b24f5188.JPG)
