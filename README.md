@@ -16,7 +16,7 @@ Diagonal 15-Puzzle is a modified version of the 15-Puzzle in which the blank squ
 2. My heuristic function
 
 ## Additional Notes
-1. The command-line argument option `-e` is valid only when the search method `-s` selected as `astar`
+1. The command-line argument option `-e` is valid only when the search method `-s` is selected as `astar`
 2. If you put your own problem in a text file, the folder where the project is located, you can solve it by entering the name of your file at the command line
 
 ## The Solution of the Example Puzzle
