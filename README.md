@@ -1,4 +1,4 @@
-﻿# Modified-15-Puzzle
+﻿# Diagonal-15-Puzzle
 Diagonal 15-Puzzle is a modified version of the 15-Puzzle in which the blank square may slide diagonally in addition to horizontal and vertical sliding. However, the cost of each diagonal slide is 1.5 whereas the cost of each horizontal or vertical slide is 1. The final state of the Diagonal 15-Puzzle is as follows:
 
 ![Goal State](https://cloud.githubusercontent.com/assets/9055746/22848655/a29af8fc-effe-11e6-824e-f19c51cc42de.JPG)
