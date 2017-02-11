@@ -40,11 +40,6 @@ class Node:
 
 
 def main():
-    """
-    This is the main function.
-    This function calls 'tester' function of module 'puzzletester'
-    puzzletester.tester() function includes all interactions and analysis part.
-    """
     arg = get_args()
     data = get_data(arg['file'][0]) # read initial state from file
 
@@ -132,12 +127,6 @@ def get_state_text(state):
 
 
 def get_actions(state):
-    """ Return actions for given state.
-
-    Argument:
-        state -- the given state of an agent
-    """
-
     state_np = np.asarray(state)
 
     row, col = np.where(state_np == 0)
@@ -166,11 +155,6 @@ def get_actions(state):
 
 
 def result_cost(action):
-    """ Return the cost of a given action
-
-    Arguments:
-         action -- (String) A movement of an agent
-    """
     if action == "goUpLeft" or action == "goUpRight" or action == "goDownLeft" or action == "goDownRight":
         return 1.5
     else:
@@ -285,11 +269,6 @@ def goal_test(state):
 
 
 def get_h1(state):
-    """ Return the sum of misplaced tiles for given state
-
-    :param state: list 2D
-    :return: int
-    """
     goal_list = [[1, 2, 3, 4],
                  [12, 13, 14, 5],
                  [11, 0, 15, 6],
@@ -307,12 +286,6 @@ def get_h1(state):
 
 
 def get_h2(state):
-    """Return the result of my heuristic function
-
-    :param state: list 2D
-    :return: int
-    """
-
     total_dist = 0
     for row_idx, row in enumerate(state):
         for col_idx, col in enumerate(row):
