@@ -78,7 +78,7 @@ def get_data(filename):
 def solve_puzzle(data, arg):
     node_initial = Node(None, data, None, 0)
 
-    print("Initial state for (a):")
+    print("Initial state:")
     print(np.matrix(node_initial.state))
     print("---------------")
 
@@ -91,10 +91,12 @@ def solve_puzzle(data, arg):
         print("Uniform Cost Search:")
         result, num_of_exp_nodes, msn = ucs(node_initial, True)
     elif arg['search'][0] == "ils":
+        print("Iterative Lengthening Search:")
         result, num_of_exp_nodes, msn = ils(node_initial, math.inf, True)
     elif arg['search'][0] == "astar":
         h_dict = {1: "h1", 2: "h2"}
         heur_type = arg['eval'][0]
+        print("A* Search using "+str(h_dict[heur_type])+":")
         result, num_of_exp_nodes, msn = astar(node_initial, h_dict[heur_type], True)
 
     depth = report_path(result)
